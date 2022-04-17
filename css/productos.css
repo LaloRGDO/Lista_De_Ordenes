@@ -117,10 +117,34 @@ label{
 @media screen and (max-width: 832px) {
     .seccion_tabla_productos{
         flex-direction: column;
+        padding: 2rem 0;
     }
-
     #totalPagar{
         font-size: 2.5rem;
+        text-align: center;
+    }
+    .titulo{
+        font-size: 1.5rem;
+    }
+    .header_products{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .link_regresar{
+        margin-top: 10px;
+    }
+    .contenedor_tabla_productos{
+        width: 100%;
+    }
+    .tablaProductos{
+        border: 3px solid #000000;
+        display: block;
+        overflow-x: scroll;
+    }
+    .input{
+        width: 70%;
     }
 }
 
@@ -128,8 +152,13 @@ label{
     .seccion_tabla_productos{
         flex-direction: column;
     }
-
     #totalPagar{
         font-size: 2.5rem;
+    }
+    .titulo{
+        font-size: 1.5rem;
+    }
+    .input{
+        width: 50%;
     }
 }
