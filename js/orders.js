@@ -29,5 +29,5 @@ window.addEventListener("onload", clientServices.obtenerBd().then(data => {
 
 tablaOrdenes.addEventListener("click", (event)=>{
     localStorage.orden = event.target.textContent;
-    location.href="../screens/productos.html"
+    location.href="productos.html"
 });
