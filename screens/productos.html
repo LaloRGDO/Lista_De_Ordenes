@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+    </head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../css/reset.css">
+        <link rel="stylesheet" type="text/css" href="../css/productos.css">
+        <link rel="stylesheet" type="text/css" href="../css/orders.css">
+        <title>Productos</title>
+    </head lang="es">
+    <body>
+        <main>
+            <header class="header_products">
+                <h2 class="titulo"></h2>
+                <a class="link_regresar link" href="../ordenes.html">Regresar a la lista de ordenes</a>
+            </header>
+            
+            <section class="seccion_tabla_productos">
+                <table class="tablaProductos">
+                    <thead class="tablaProductos_head thead">
+                        <tr>
+                            <th colspan="5">Listado de Productos</th>
+                        </tr>
+                        <tr>
+                            <th>SKU</th>
+                            <th>NOMBRE</th>
+                            <th>CANTIDAD</th>
+                            <th>PRECIO UNITARIO</th>
+                            <th>TOTAL</th>
+                        </tr>
+                    </thead>
+                        <tr>
+                        </tr>
+                    <tbody class="tablaProductos_cuerpo"></tbody>
+                    <tfoot class="tablaProductos_tfoot">
+                        <td colspan="4">
+                            Total
+                            <th id="total" colspan="1"></th>
+                        </td>
+                    </tfoot>
+                </table>
+                <div class="seccion_pagar">
+                    <p id="totalPagar"></p>
+                    <button class="boton_pagar button">Pagar</button>
+                </div>
+            </section>
+            <section class="seccion_formulario">
+                <form id="form">
+                    
+                    <legend class="instruccion">Add a product to the order</legend>
+                    <legend class="noerror" id="mensajeError">Llena los campos requeridos (*)</legend>
+                    <label for="sku">SKU*:</label>
+                    <input type="text" placeholder="####" id="sku" name="sku" class="input">
+                    <legend class="noerror mensajeSku">Este campo es requerido</legend>
+
+                    <label for="name">Nombre*:</label>
+                    <input type="text" placeholder="Product Name" id="name" name="name" class="input">
+                    <legend class="noerror mensajeNombre">Este campo es requerido</legend>
+
+                    <label for="quantity">Cantidad*:</label>
+                    <input type="tel" placeholder="####" id="quantity" name="quantity" class="input">
+                    <legend class="noerror mensajeCantidad">Este campo es requerido</legend>
+
+                    <label for="price">Precio*:</label>
+                    <input type="tel" placeholder="$####" id="price" name="price" step="0.01" class="input">
+                    <legend class="noerror mensajePrice">Este campo es requerido</legend>
+
+                    <input type="submit" value="Add Product" id="formButton" class="button" >
+
+                </form>
+            </section>
+        </main>
+        <script type="module" src="../js/products.js"></script>
+        <script src="../js/form.js"></script>
+    </body>
+</html>

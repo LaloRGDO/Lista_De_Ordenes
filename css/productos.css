@@ -1,0 +1,135 @@
+.link{
+    text-decoration: none;
+}
+
+.header_products{
+    justify-content: space-around;
+    align-items: center;
+}
+
+.link_regresar{
+    background-color: #090088;
+    border-radius: 5px;
+    padding: 1rem;
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.link_regresar:hover{
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+}
+
+.tablaProductos_tfoot{
+    background-color: #91adff;
+    font-weight: bold;
+    border: 3px solid #000000;
+}
+
+.seccion_tabla_productos{
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tablaProductos{
+    border: 3px solid #000000;
+}
+
+.seccion_pagar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#totalPagar{
+    margin: 1rem;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.button{
+    font-size: 1.5rem;
+    background-color: #24028c;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem 3rem;
+    transition: 0.5s;
+}
+
+.button:hover{
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+}
+
+.seccion_formulario{
+    background: #91adff;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1rem;
+}
+
+#form{
+    text-align: center;
+}
+
+legend{
+    margin: 1rem;
+}
+
+.instruccion{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.noerror{
+    display: none;
+}
+
+.error{
+    display: block;
+    color: rgb(227, 71, 71);
+    font-weight: bold;
+}
+
+label{
+    margin: 0.5rem;
+}
+
+.input{
+    display: block;
+    padding: 0.8rem;
+    border-radius: 8px;
+    margin: 0.5rem auto;
+    width: 30%;
+}
+
+.redBorder{
+    border-width: 3px;
+    border-color: red;
+}
+
+@media screen and (max-width: 832px) {
+    .seccion_tabla_productos{
+        flex-direction: column;
+    }
+
+    #totalPagar{
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 833px) and (max-width: 1283px) {
+    .seccion_tabla_productos{
+        flex-direction: column;
+    }
+
+    #totalPagar{
+        font-size: 2.5rem;
+    }
+}
