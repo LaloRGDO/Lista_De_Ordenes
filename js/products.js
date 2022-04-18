@@ -85,6 +85,7 @@ formulario.addEventListener("submit", function(event){
         suma+= nuevoProducto.quantity * nuevoProducto.price;
         
         total.innerHTML = `$${suma.toFixed(2)}`;
+        totalPagar.innerHTML = `Total: $ ${suma.toFixed(2)}`;
 
         inputSku.value = "";
         inputName.value = "";
